@@ -9,7 +9,7 @@
     "postbuild:css": "postcss --replace \"files/static/css/**/*.css\"",
     "build:js": "webpack --progress --colors",
     "watch": "npm-run-all --parallel watch:*",
-    "watch:css": "nodemon -e scss --watch born/scss --exec npm run build:css",
+    "watch:css": "nodemon -e scss --watch files/scss --exec npm run build:css",
     "watch:js": "webpack --progress --colors --watch",
     "watch:html": "nodemon -e html --watch . --exec npm run bs-reload"
   },
