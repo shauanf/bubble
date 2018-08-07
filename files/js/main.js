@@ -1,4 +1,4 @@
-// let bubble;
+let bubble;
 
 function setup() {
   createCanvas(600, 500);
@@ -17,16 +17,17 @@ class Bubble {
     this.x = 200;
     this.y = 150;
   }
-}
 
-// function show() {
-//   stroke(255);
-//   strokeweight(4);
-//   noFill();
-//   ellipse(bubble.x, bubble.y, 24, 24);
-// }
-//
-// function move() {
-//   bubble.x = bubble.x + random(-5, 5);
-//   bubble.y = bubble.y + random(-5, 5);
-// }
+  move() {
+    this.x = this.x + random(-5, 5);
+    this.y = this.y + random(-5, 5);
+  }
+
+  show() {
+    stroke(255);
+    strokeweight(4);
+    noFill();
+    ellipse(bubble.x, bubble.y, 24, 24);
+  }
+
+}
