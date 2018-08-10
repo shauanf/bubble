@@ -1,4 +1,5 @@
 let bubble;
+let itBe;
 
 function setup() {
   createCanvas(600, 500);
@@ -22,6 +23,7 @@ class Bubble {
     this.x = this.x + random(-5, 5);
     this.y = this.y + random(-5, 5);
   }
+
 
   show() {
     stroke(255);
